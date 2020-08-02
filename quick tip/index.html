@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quick tip</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main id="container">
+        <h1>Quick Tip</h1>
+    <section>
+        <div class="bill">
+            <label for="yourBill">Bill</label>
+            <input type="number" placeholder="Enter bill" id="userBill" />
+        </div>
+        <div>
+            <div class="space-between">
+                <label for="tipInput">Select tip</label>
+                <span id="tipPercent">0%</span>
+            </div>
+            <input type="range" value="0" id="tipInput"  class="rage"/>
+        </div>
+        <div class="space-between">
+            <span>Tip</span>
+            <span id="tipValue"></span>
+        </div>
+        <hr>
+        <div class="space-between total">
+            <span>Total</span>
+            <span id="totalOfTip"></span>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <div class="space-between">
+                <label for="splitInput">Split</label>
+                <span id="splitValue"></span>
+            </div>
+            <input type="range" min="1" max="10" value="1" id="splitInput" class="rage" />
+
+        </div>
+        <div class="space-between">
+            <span>Bill each</span>
+            <span id="billEach"></span>
+        </div>
+        <div class="space-between">
+            <span>Tip each</span>
+            <span id="tipEach"></span>
+        </div>
+    </section>
+    </main>
+    <footer>
+        <h5>Designed By <a href="https://twitter.com/Michellemichy_d">Michelle</a></h5>
+        <h5>Inspired By <a href="https://fun-javascript-projects.com/course">FunJavaScript</a></h5>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
